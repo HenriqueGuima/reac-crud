@@ -1,5 +1,8 @@
 import React from "react";
 
+//User editing component
+//Missing current date to pass (or not?). Might not need it
+
 class EditUser extends React.Component {
     constructor(props) {
         super(props);
@@ -12,6 +15,7 @@ class EditUser extends React.Component {
         };
     }
 
+    //State update
     update = (e) => {
         e.preventDefault();
         if (this.state.name === "" || this.state.type === "") {
@@ -22,6 +26,8 @@ class EditUser extends React.Component {
         this.setState({ name: "", type: "", img: "" });
         this.props.history.push("/");
     };
+
+    //Form fields
     render() {
         return ( <
             div className = "ui main" >

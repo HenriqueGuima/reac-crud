@@ -9,6 +9,7 @@ const UserList = (props) => {
         props.getUserId(id);
     };
 
+    //Displays all users
     const renderUserList = props.users.map((user) => {
         return ( <
             UserCard user = { user }
@@ -17,6 +18,8 @@ const UserList = (props) => {
             />
         );
     });
+
+    //Button to add user
     return ( <
         div className = "main" >
         <

@@ -13,11 +13,13 @@ function App() {
     const LOCAL_STORAGE_KEY = "users";
     const [users, setUsers] = useState([]);
 
-    //RetrieveUsers
+    //Get Users
     const retrieveUsers = async() => {
         const response = await api.get("/users");
         return response.data;
     };
+
+    //Handlers
 
     const addUserHandler = async(user) => {
         console.log(user);
@@ -50,20 +52,17 @@ function App() {
         setUsers(newUserList);
     };
 
+    //Gets all users
+
     useEffect(() => {
-        // const retriveUsers = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-        // if (retriveUsers) setUsers(retriveUsers);
         const getAllUsers = async() => {
             const allUsers = await retrieveUsers();
             if (allUsers) setUsers(allUsers);
         };
-
         getAllUsers();
     }, []);
 
-    useEffect(() => {
-        //localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(users));
-    }, [users]);
+    //Routing
 
     return ( <
         div className = "ui container" >

@@ -5,7 +5,7 @@ class AddUser extends React.Component {
         name: "",
         type: "",
         img: "",
-        date: new Date()
+        date: new Date() //Regular expressions to format the date time because some of them wouldn't display the correct time
             .toUTCString()
             .match(/([0-9]*[A-Z]*[a-z]*\,)\s[0-9]*\s[A-Z]*[a-z]*/g),
         time: new Date()
@@ -16,7 +16,7 @@ class AddUser extends React.Component {
     add = (e) => {
         e.preventDefault();
         if (this.state.name === "" || this.state.type === "") {
-            alert("ALl the fields are mandatory!");
+            alert("Please fill all fields");
             return;
         }
         this.props.addUserHandler(this.state);
@@ -33,6 +33,8 @@ class AddUser extends React.Component {
         });
         this.props.history.push("/");
     };
+
+    //Form fields
     render() {
         return ( <
             div className = "ui main" >

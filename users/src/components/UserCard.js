@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import user from "../images/user.png";
 
+//Sets what is going to be displayed in the user card
 const UserCard = (props) => {
     const { id, name, type, img, date, time } = props.user;
     return ( <

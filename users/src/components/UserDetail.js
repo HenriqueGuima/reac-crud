@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import user from "../images/user.jpg";
 
+//Sets what's going to be displayed in the more detailed page of each user
+//No date time here yet (maybe display when it was created)
 const UserDetail = (props) => {
     const { name, type, img, date } = props.location.state.user;
     return ( <
