@@ -1,16 +1,14 @@
 {
-  "users": [
-    {
-      "id": "dce48672-ff40-4ef1-8e8f-cb4e9f69285c",
-      "name": "Henrique Guimarães",
-      "type": "sdgsdhsd@gmail.com",
-      "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
-      "date": [
-        "Mon, 02 Aug"
-      ],
-      "time": [
-        "17:44"
-      ]
-    }
-  ]
+    "users": [{
+        "id": "dce48672-ff40-4ef1-8e8f-cb4e9f69285c",
+        "name": "Henrique Guimarães",
+        "type": "sdgsdhsd@gmail.com",
+        "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
+        "date": [
+            "Mon, 02 Aug"
+        ],
+        "time": [
+            "17:44"
+        ]
+    }]
 }
